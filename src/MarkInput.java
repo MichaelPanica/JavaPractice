@@ -6,14 +6,19 @@ public class MarkInput {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter mark:");
 
-        Integer grade = Integer.valueOf(input.nextLine());
 
-        if (grade >= 70){
-            System.out.println(grade + "% is First Class.");
-        } else if (grade >= 40) {
-            System.out.println(grade + "% is Second Class.");
-        } else {
-            System.out.println(grade + "% is Fail.");
+        try {
+            int grade = Integer.parseInt(input.nextLine());
+            if (grade >= 70){
+                System.out.println(grade + "% is First Class.");
+            } else if (grade >= 40) {
+                System.out.println(grade + "% is Second Class.");
+            } else {
+                System.out.println(grade + "% is Fail.");
+            }
+        } catch (NumberFormatException e){
+            System.out.println("Error. Please enter a valid number.");
         }
+        input.close();
     }
 }
