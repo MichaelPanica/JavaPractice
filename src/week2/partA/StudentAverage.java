@@ -25,13 +25,14 @@ public class StudentAverage {
 
         System.out.println("Average mark: " + average);
 
-        if (average >= 70) {
+        if (average < 0 || average > 100) {
+            System.out.println("Invalid average");
+        } else if (average >= 70) {
             System.out.println("First Class");
         } else if (average >= 40) {
             System.out.println("Pass");
-        } else if (average < 0 || average > 100) {
-            System.out.println("Invalid average");
-        } else {
+        }
+        else {
             System.out.println("Fail");
         }
     }
