@@ -11,7 +11,7 @@ public class StudentAverage {
 
         System.out.println("Enter 5 marks:");
 
-        for (int i = 1; i <= marks.length; i++) {
+        for (int i = 0; i <= marks.length; i++) {
             marks[i] = input.nextInt();
         }
 
@@ -21,7 +21,7 @@ public class StudentAverage {
             sum = marks[i];
         }
 
-        double average = sum / marks.length;
+        double average = (double) sum / marks.length;
 
         System.out.println("Average mark: " + average);
 
