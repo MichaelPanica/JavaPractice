@@ -18,5 +18,6 @@ public class Debugging {
         System.out.println("Your surname is " + rest);
         System.out.println("You are " + n + " years old");
         System.out.println("And you live in " + city);
+        in.close();
     }
 }
