@@ -2,7 +2,7 @@ package week2.partA;
 
 import java.util.Scanner;
 
-public class StudentAverage {
+public class Debugging_StudentAverage {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
