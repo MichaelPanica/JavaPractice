@@ -5,14 +5,18 @@ public class Debugging {
     public static void main(){
         Scanner in = new Scanner(System.in);
 
-        String first = in.next();
+        System.out.println("Please enter your first name. ");
+        String first = in.nextLine();
+        System.out.println("Please enter your surname");
         String rest = in.nextLine();
-        int n = in.nextInt();
+        System.out.println("Please enter your age.");
+        int n = Integer.parseInt(in.nextLine().strip());
+        System.out.println("Please enter your city. ");
         String city = in.nextLine();
 
-        System.out.println("[" + first + "]");
-        System.out.println("[" + rest + "]");
-        System.out.println(n*2);
-        System.out.println("[" + city + "]");
+        System.out.println("Your first name is " + first);
+        System.out.println("Your surname is " + rest);
+        System.out.println("You are " + n + " years old");
+        System.out.println("And you live in " + city);
     }
 }
