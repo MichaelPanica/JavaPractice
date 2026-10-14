@@ -10,6 +10,7 @@ B Very Good
 C Good – Pass
 D Satisfactory – Barely Pass
 F Fail              */
+import java.util.Locale;
 import java.util.Scanner;
 
 public class SwitchStatements {
@@ -18,7 +19,7 @@ public class SwitchStatements {
 
     System.out.println("Please enter a grade (A, B, C, D or F): ");
         String grade = userInput.nextLine();
-        switch (grade){
+        switch (grade.toUpperCase()){
             case "A":
                 System.out.print("Excellent! First Class");
                 break;
